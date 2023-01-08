@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/megaromi4/employee-list/static/css/main.b129e595.css",
-    "main.js": "/megaromi4/employee-list/static/js/main.2734dbfc.js",
-    "index.html": "/megaromi4/employee-list/index.html",
-    "main.b129e595.css.map": "/megaromi4/employee-list/static/css/main.b129e595.css.map",
-    "main.2734dbfc.js.map": "/megaromi4/employee-list/static/js/main.2734dbfc.js.map"
+    "main.css": "/employee-list/static/css/main.b129e595.css",
+    "main.js": "/employee-list/static/js/main.2734dbfc.js",
+    "index.html": "/employee-list/index.html",
+    "main.b129e595.css.map": "/employee-list/static/css/main.b129e595.css.map",
+    "main.2734dbfc.js.map": "/employee-list/static/js/main.2734dbfc.js.map"
   },
   "entrypoints": [
     "static/css/main.b129e595.css",
