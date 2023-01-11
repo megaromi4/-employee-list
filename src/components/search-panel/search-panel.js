@@ -19,7 +19,6 @@ class SearchPanel extends Component {
   };
 
   render() {
-    const { onUpdateSearch } = this.props;
     const { term } = this.state;
     return (
       <input

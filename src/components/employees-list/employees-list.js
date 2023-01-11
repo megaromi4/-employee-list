@@ -5,10 +5,6 @@ import EmployeesListItem from "../employees-list-item/employees-list-item";
 import "./employees-list.css";
 
 class EmployeesList extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const { data, onDelete, onToggleIncrease, onToggleRise } = this.props;
     let elem = data.map((data) => {

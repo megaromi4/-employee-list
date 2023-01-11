@@ -15,20 +15,20 @@ class App extends Component {
       data: [
         {
           name: "John Smith",
-          salary: 1000,
+          salary: 800,
           increase: false,
           rise: true,
           id: 1,
         },
         {
-          name: "Vasya Pupkin",
-          salary: 22,
+          name: "Ivan Dorn",
+          salary: 2800,
           increase: false,
           rise: false,
           id: 2,
         },
         {
-          name: "Anna Vanna",
+          name: "Anna White",
           salary: 1111,
           increase: false,
           rise: false,
@@ -111,12 +111,12 @@ class App extends Component {
         return items.filter((item) => {
           return item.rise;
         });
-      case "all":
-        return items;
       case "more1000":
         return items.filter((item) => {
           return item.salary > 1000;
         });
+      default:
+        return items;
     }
   };
 
