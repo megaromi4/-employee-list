@@ -81,6 +81,17 @@ class App extends Component {
     }));
   };
 
+  onChangeSalary = (id, salary) => {
+    this.setState(({ data }) => ({
+      data: data.map((item) => {
+        if (item.id === id) {
+          return { ...item, salary: salary };
+        }
+        return item;
+      }),
+    }));
+  };
+
   onToggleRise = (id) => {
     this.setState(({ data }) => ({
       data: data.map((item) => {
@@ -146,6 +157,7 @@ class App extends Component {
           onDelete={this.onDelete}
           onToggleIncrease={this.onToggleIncrease}
           onToggleRise={this.onToggleRise}
+          onChangeSalary={this.onChangeSalary}
         />
         <EmployeesAddForm onAdd={this.onAdd} />
       </div>

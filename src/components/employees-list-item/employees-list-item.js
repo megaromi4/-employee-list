@@ -9,6 +9,7 @@ const EmployeesListItem = (props) => {
     rise,
     onToggleIncrease,
     onToggleRise,
+    onChangeSalary,
   } = props;
 
   let classNames = "list-group-item d-flex";
@@ -30,7 +31,10 @@ const EmployeesListItem = (props) => {
         <input
           type="text"
           className="list-group-item-input"
-          defaultValue={salary + " $"}
+          defaultValue={salary}
+          onChange={(e) => {
+            onChangeSalary(e.target.value);
+          }}
         />
       </div>
 
